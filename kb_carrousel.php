@@ -41,7 +41,10 @@ function genere_boite(){
     $contenu = "
     <button class='btn_modale'>boite modale</button>
     <div class='carrousel'>
-    <button class='btn-fermer'> X </button></div>";
+        <button class='btn-fermer'> X </button>
+        <figure class='carrousel__figure'></figure>
+        <form class='carrousel__form'></form>
+    </div>";
     return $contenu;
 }
 add_shortcode('kb_carrousel', 'genere_boite');
