@@ -25,7 +25,7 @@
         console.log(elmImg.getAttribute("src"));
 
         ajouter_img_carrousel(elmImg);
-        ajouter_radio_carrousel();
+        //ajouter_radio_carrousel();
     }
 
     function ajouter_img_carrousel(elmImg){
