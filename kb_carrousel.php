@@ -32,15 +32,19 @@ function kbc_enqueue()
                     plugin_dir_url(__FILE__) ."js/carrousel.js",
                     array(),
                     $version_js,
-                    false);
+                    true);
 }
 add_action('wp_enqueue_scripts', 'kbc_enqueue');
 
 
 function genere_boite(){
     $contenu = "
-    <div class='carrousel'>Carrousel</div>";
-
+    <button hidden class='btn_modale'></button>
+    <div class='carrousel btn_modale'>
+        <button class='btn-fermer'> X </button>
+        <figure class='carrousel__figure'></figure>
+        <form class='carrousel__form'></form>
+    </div>";
     return $contenu;
 }
 add_shortcode('kb_carrousel', 'genere_boite');
