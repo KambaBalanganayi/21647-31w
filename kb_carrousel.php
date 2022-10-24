@@ -39,8 +39,8 @@ add_action('wp_enqueue_scripts', 'kbc_enqueue');
 
 function genere_boite(){
     $contenu = "
-    <button class='btn_modale'>boite modale</button>
-    <div class='carrousel'>
+    <button hidden class='btn_modale'></button>
+    <div class='carrousel btn_modale'>
         <button class='btn-fermer'> X </button>
         <figure class='carrousel__figure'></figure>
         <form class='carrousel__form'></form>
