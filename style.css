@@ -52,4 +52,59 @@
   display: flex;
   justify-content: center;
   margin: 1rem;
+}
+
+[type=checkbox], [type=radio] {
+  margin: 5px;
+}
+
+.arrow {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+}
+
+figure {
+  border-radius: 25px;
+}
+
+.widget__area h2 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.menu__aside {
+  display: flex;
+  justify-content: center;
+}
+.menu__aside li {
+  padding: 5px;
+  margin: 3px;
+  background-color: navy;
+}
+
+.site__title {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

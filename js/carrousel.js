@@ -84,6 +84,22 @@
                   console.log(index);
                   dernierIndex = this.dataset.index;
             })
+    /* ------------------------ écouteur sur radio pour afficher une nouvelle image */ 
+            document.querySelector(".arrow").addEventListener('mousedown', function(){
+                console.log(this.dataset.index);
+
+                if (dernierIndex != -1) {
+                    elmCarrousel__figure.children[dernierIndex].classList.remove(
+                      "carrousel__figure__img--activer"
+                    );
+                  }
+
+                  elmCarrousel__figure.children[this.dataset.index].classList.add(
+                    "carrousel__figure__img--activer"
+                  );
+                  console.log(index);
+                  dernierIndex = this.dataset.index;
+            })
     }
     
     elmBtnModale.addEventListener('mousedown', function(){
