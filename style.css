@@ -655,7 +655,7 @@ textarea {
 }
 
 .chk-burger:checked ~ .burger {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 
 .chk-burger:checked ~ .menu__aside {
