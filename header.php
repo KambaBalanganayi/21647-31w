@@ -48,7 +48,7 @@
 	<aside class="site__menu">
 		<h2>Menu Secondaire</h2>
 		<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
-		<label class="burger" for="chk-burger">&#11135;</label>
+		<label class="burger" for="chk-burger">&#127829;</label>
 		<?php wp_nav_menu(array(
 					"menu" => "aside",
 					"container" => "nav",

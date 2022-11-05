@@ -9,14 +9,23 @@
     transform: rotate(90deg);
 }
 
+.chk-burger:checked ~ .menu__aside{
+     transform: translateX(0);
+     transform: translateX(-100vw);
+     transition: transform 0.5s;
+}
+
+
 .burger{
     position: absolute;
     width : 2rem;
     height : 2rem;
-
+    top: 20px;
+    margin-left: 1.05rem;
     transform: rotate(0deg);
     transition: transform 0.5s;
     font-size: 1.5rem;
+
 }
 
 .site__menu h2{
@@ -28,6 +37,16 @@
 .menu__aside{
     display: flex;
     justify-content: center;
+    position: absolute;
+    width: 100vw;
+    transform: translateX(-100vw);
+    transition: transform 0.5s;
+    @media screen and (min-width: 700px) {
+        position: static;
+        transform: translateX(0);
+        width: 100%;
+    }
+
     //ul
     .menu{
         list-style-type: none;
