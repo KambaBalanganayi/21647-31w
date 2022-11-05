@@ -646,6 +646,27 @@ textarea {
   background-color: #B1DDF1;
 }
 
+.site__menu {
+  position: relative;
+}
+
+.chk-burger {
+  display: none;
+}
+
+.chk-burger:checked ~ .burger {
+  transform: rotate(90deg);
+}
+
+.burger {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+  font-size: 1.5rem;
+}
+
 .site__menu h2 {
   display: flex;
   justify-content: center;
