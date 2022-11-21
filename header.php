@@ -32,6 +32,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="site__branding">
+			<?= get_custom_logo(); ?>
 				<h2 class="site__title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</h2>
