@@ -17,22 +17,50 @@
 <?php get_header();?>
 
     <main class="site__main">
-        <?php
+    <?php
+wp_nav_menu(array(
+    "menu"=>"evenement",
+    "container"=>"nav",
+    "container_class"=>"menu__evenement"
+));?>
 
-            wp_nav_menu(array(
-                "menu" =>"evenement",
-                "container"=>"nav",
-                "container_class"=>"menu__evenement"
-            ));
-            if ( have_posts() ) :
-                while( have_posts() ) :
-                the_post();?>
-            <h2><a href="<?php the_permalink(); ?>">
-            <?php the_title();?></a></h2>
+<section class="liste">
+	<?php	if ( have_posts() ) :
+            while ( have_posts() ) :
+				the_post(); ?>
+                <article class="liste__cours">
+                <h1><a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?></a></h1>
+                
+            <?php
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('thumbnail');
+            }
+            ?>
 
-            <?php the_content(null, true);?>
-            <?php endwhile;?>
-            <?php endif;?>
+                <?php
+                $montableau = get_the_category();
+                //var_dump($montableau);
+                $boolGalerie = false;
+                foreach($montableau as $cle){
+                    if ($cle->slug == "galerie"){
+                        $boolGalerie = true;
+                    };
+                }
+                if ($boolGalerie == true)
+                {
+                    the_content();
+                }
+                else{
+                     echo wp_trim_words(get_the_excerpt(),10," ... "); 
+                }
+               
+                
+                ?>
+                </article>  
+            <?php endwhile; ?>
+        <?php endif; ?>
+        </section>
     </main>
 
 <?php get_footer();?>
