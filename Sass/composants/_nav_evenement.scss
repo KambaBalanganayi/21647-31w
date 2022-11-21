@@ -1,4 +1,6 @@
 .menu__evenement {
+  padding-top: 20px;
+  margin-left: -85px;
 }
 
 .menu__evenement .menu {
@@ -6,43 +8,60 @@
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+}
 
-  border: 1px solid #bbb;
+.menu__evenement hr{
+  border: 5px;
+  height: 2px; /* Firefox... */
+  box-shadow: 0 0 1px 1px black;
+
 }
 
 .menu__evenement .menu-item {
   width: 25%;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .menu__evenement .menu-item a {
   text-decoration: none;
+
+
 }
 .menu__evenement .menu-item a:hover {
 }
 
 .menu-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(150, 70, 9, 0.379);
 }
 .evenement__porte {
-  background-color: aquamarine;
+  background-color: #ff5106;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .evenement__projet {
-  background-color: rgb(127, 153, 255);
+  background-color: #ff5106;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .evenement__stage {
-  background-color: rgb(255, 255, 127);
+  background-color: #ff5106;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .menu__item__icone {
+  display: none;
   width: 50px;
   height: 50px;
-  border: 1px solid #aaa;
+
 }
 
 .evenement__porte .menu__item__icone {
+  // background-color: #1D7874;
+  // border-radius: 50%;
+  // padding-top: 10px;
 }
 
 .evenement__projet .menu__item__icone {
+
 }
 
 .evenement__stage .menu__item__icone {
