@@ -19,7 +19,7 @@
 
 	<?php wp_head(); ?>
 	<style>
-		.site__header{
+		.primary__menu{
 			background-color: <?= get_theme_mod("site__title__background")?>;
 		}
 	</style>

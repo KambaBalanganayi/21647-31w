@@ -12,6 +12,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+///--------------------------Inclusion du customizer du background color--------------/////
+require_once("options/apparence.php");
+
+
 function mon_31w_setup() {
 
 
