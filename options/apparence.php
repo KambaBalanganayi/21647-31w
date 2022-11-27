@@ -16,7 +16,15 @@
 
        $manager->add_control(new WP_Customize_Color_Control($manager, "site__title__background",
                         ["section"=>"mon_theme_apparence",
-                        "label"=>"Couleur du site__title" ]));
+                        "label"=>"Couleur de fond du menu principal" ]));
+ 
+        $manager->add_setting("footer__background", 
+                                ["default"=>"#aaa",
+                                "sanitize_callback"=>"sanitize_hex_color"]);
+
+       $manager->add_control(new WP_Customize_Color_Control($manager, "footer__background",
+                        ["section"=>"mon_theme_apparence",
+                        "label"=>"Couleur de fond du footer" ]));
  
                                                   
     });

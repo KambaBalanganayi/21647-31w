@@ -18,5 +18,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page --> 
 <?php wp_footer(); ?>
+<style>
+		.site__footer{
+			background-color: <?= get_theme_mod("footer__background")?>;
+		}
+	</style>
 </body>
 </html>
